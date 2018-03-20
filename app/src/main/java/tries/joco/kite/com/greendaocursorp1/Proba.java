@@ -16,10 +16,13 @@ public class Proba {
     
     private String name;
 
-    @Generated(hash = 1702156874)
-    public Proba(Long id, String name) {
+    private String szin;
+
+    @Generated(hash = 2042131130)
+    public Proba(Long id, String name, String szin) {
         this.id = id;
         this.name = name;
+        this.szin = szin;
     }
 
     @Generated(hash = 930809158)
@@ -40,6 +43,14 @@ public class Proba {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSzin() {
+        return this.szin;
+    }
+
+    public void setSzin(String szin) {
+        this.szin = szin;
     }
 
 
